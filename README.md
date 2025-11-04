@@ -36,3 +36,9 @@ summary(m)
 grafica(df$x, df$y)
 grafica_residuos(m)
 ```
+
+## Added after
+Binomial Distribution
+- Probability
+- Mean
+- Variance
