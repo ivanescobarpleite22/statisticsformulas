@@ -43,9 +43,9 @@ cuantiles <- function(x, probs = c(0.25, 0.5, 0.75)){
   stats::quantile(x, probs = probs, na.rm = TRUE, names = TRUE)
 }
 
-#' Normalización [0,1]
+#' Normalización 0,1
 #' @param x Vector numérico.
-#' @return Vector reescalado a [0,1]. Si min==max devuelve ceros.
+#' @return Vector reescalado a 0,1. Si min==max devuelve ceros.
 #' @examples
 #' normalizar(1:10)
 #' @export
