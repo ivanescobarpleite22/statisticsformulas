@@ -4,4 +4,4 @@
 #' y conjuntos de datos de ejemplo usados en las prácticas de Métodos Estadísticos.
 #'
 #' @keywords internal
-"_PACKAGE"
+"_PACKAGE"g
