@@ -45,8 +45,19 @@ positive.")
 must be a non-negative integer.")
   rpois(n, lambda)
 }
-
-# Probability that x is greater than a
-p_poison_greater <- function(a,lambda){
-  p <- 1 - ppois(a-1,lambda,lower.tail = TRUE)
+# P(X > a)
+p_poisson_greater <- function(a, lambda) {
+  return(1 - ppois(a, lambda))
+}
+# P(X >= a)
+p_poisson_greater_equal <- function(a, lambda) {
+  return(1 - ppois(a - 1, lambda))
+}
+# P(X <= a)
+p_poisson_lower <- function(a, lambda) {
+  return(ppois(a, lambda))
+}
+# P(a <= X <= b)
+p_poisson_interval <- function(a, b, lambda) {
+  return(ppois(b, lambda) - ppois(a - 1, lambda))
 }
