@@ -45,6 +45,11 @@ positive.")
 must be a non-negative integer.")
   rpois(n, lambda)
 }
+
+# P(X = a)
+p_poisson  <- function(a,lambda){
+  return (dpois(a,lambda))
+}
 # P(X > a)
 p_poisson_greater <- function(a, lambda) {
   return(1 - ppois(a, lambda))
